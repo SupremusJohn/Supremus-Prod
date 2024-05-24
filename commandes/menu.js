@@ -32,24 +32,28 @@ const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
-╭────✧${s.BOT}✧────◆
-│   *Préfix* : ${s.PREFIXE}
-│   *Owner* : ${s.OWNER_NAME}
-│   *Mode* : ${mode}
-│   *Commands* : ${cm.length}
-│   *Date* : ${date}
-│   *Hour* : ${temps}
-│   *Mémoire* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
-│   *Plateforme* : ${os.platform()}
-│   *Développer* : Djalega++ 
-│  & M๏𝓷keℽ D Lบffy
-╰─────✧WA-BOT✧─────◆ \n\n`;
+░░░░░░░░░░░░░░░░░░░
+═══════════════════
+           ✨ *SP-ZK-MD* ✨
+═══════════════════
+   *Préfix* : ${s.PREFIXE}
+   *Owner* : ${s.OWNER_NAME}
+   *Mode* : ${mode}
+   *Commands* : ${cm.length}
+   *Date* : ${date}
+   *Hour* : ${temps}
+   *Mémoire* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
+   *Plateforme* : ${os.platform()}
+   *Développer* : Supremus Prod
+═══════════════════ \n\n`;
     
 let menuMsg = `
-👋 Hello ${nomAuteurMessage} 👋
+✨🙂 Salut ${nomAuteurMessage} 
+Je suis *Assistant Supremus* tu peux
+aussi m'appeler mini-kurama.
 
-*List of commands :*
-◇                             ◇
+◇ *Voici ma liste de Jutsu :* ◇
+
 `;
 
     for (const cat in coms) {
@@ -64,19 +68,19 @@ let menuMsg = `
 
     menuMsg += `
 ◇            ◇
-*»»————— ★ —————««*
-"To use a command, insert ${prefixe} followed by the command_name."
+═══════════════════
+"Pour utiliser une commande, insérez ${prefixe} suivi du nom du jutsu."
  
-    Powered by Zokou-MD
-                                                
-*»»————— ★ —————««*
+Alimenté par *✨ SP-ZK-MD ✨*                                                
+═══════════════════
+░░░░░░░░░░░░░░░░░░░
 `;
 
    var lien = mybotpic();
 
    if (lien.match(/\.(mp4|gif)$/i)) {
     try {
-        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Zokou-MD*, développé par Djalega++" , gifPlayback : true }, { quoted: ms });
+        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *SP-ZK-MD*, développé par Supremus Prod." , gifPlayback : true }, { quoted: ms });
     }
     catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
@@ -86,7 +90,7 @@ let menuMsg = `
 // Vérification pour .jpeg ou .png
 else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
     try {
-        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Zokou-MD*, développé par Djalega++" }, { quoted: ms });
+        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *SP-ZK-MD*, développé par Supremus Prod" }, { quoted: ms });
     }
     catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
