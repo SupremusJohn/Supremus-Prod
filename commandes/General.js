@@ -55,12 +55,12 @@ zokou({ nomCom: "dev", categorie: "General", reaction: "💞" }, async (dest, zk
     const { ms, mybotpic } = commandeOptions;
 
     const devs = [
-      { nom: "Djalega++", numero: "22559763447" },
+      { nom: "Supremus Prod", numero: "22554191184" },
       { nom: "᚛M๏𝓷keℽ D Lบffy᚜", numero: "22891733300" },
       // Ajoute d'autres développeurs ici avec leur nom et numéro
     ];
 
-    let message = "👋 welcome to Zokou ! here is the dev :\n\n";
+    let message = "✨🙂 Salut moi c'est *SP-ZK-MD* ! je te présente mes développeurs :\n\n";
     for (const dev of devs) {
       message += `----------------\n• ${dev.nom} : https://wa.me/${dev.numero}\n`;
     }
@@ -94,8 +94,8 @@ else {
 zokou({ nomCom: "support", categorie: "General" }, async (dest, zk, commandeOptions) => {
   const { ms, repondre, auteurMessage, } = commandeOptions; 
  
-  repondre("look on pm sir ")
-  await zk.sendMessage(auteurMessage,{text : `https://chat.whatsapp.com/H6oeuhfSMtV1Orjmf2NVnl`},{quoted :ms})
+  repondre("✨ Regardé en pm/dm/ib Mr/Mme")
+  await zk.sendMessage(auteurMessage,{text : `https://whatsapp.com/channel/0029VafonsZHFxP0iY6zn30f`},{quoted :ms})
 
 })
 
