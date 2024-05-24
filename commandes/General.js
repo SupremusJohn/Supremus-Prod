@@ -2,7 +2,7 @@ const { zokou } = require("../framework/zokou");
 const {getAllSudoNumbers,isSudoTableNotEmpty} = require("../bdd/sudo")
 const conf = require("../set");
 
-zokou({ nomCom: "mods", categorie: "General", reaction: "💞" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "mods", categorie: "General", reaction: "✨" }, async (dest, zk, commandeOptions) => {
     const { ms , mybotpic } = commandeOptions;
     
   const thsudo = await isSudoTableNotEmpty()
@@ -51,12 +51,12 @@ zokou({ nomCom: "mods", categorie: "General", reaction: "💞" }, async (dest, z
   }
 });
 
-zokou({ nomCom: "dev", categorie: "General", reaction: "💞" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "dev", categorie: "General", reaction: "👥" }, async (dest, zk, commandeOptions) => {
     const { ms, mybotpic } = commandeOptions;
 
     const devs = [
       { nom: "Supremus Prod", numero: "22554191184" },
-      { nom: "᚛M๏𝓷keℽ D Lบffy᚜", numero: "22891733300" },
+      { nom: "M๏nkeℽ D Lบffy", numero: "22891733300" },
       // Ajoute d'autres développeurs ici avec leur nom et numéro
     ];
 
@@ -94,8 +94,7 @@ else {
 zokou({ nomCom: "support", categorie: "General" }, async (dest, zk, commandeOptions) => {
   const { ms, repondre, auteurMessage, } = commandeOptions; 
  
-  repondre("✨ Regardé en pm/dm/ib Mr/Mme")
+  repondre("✨ S'il vous plaît regardé en pm/dm/ib.")
   await zk.sendMessage(auteurMessage,{text : `https://whatsapp.com/channel/0029VafonsZHFxP0iY6zn30f`},{quoted :ms})
 
 })
-
